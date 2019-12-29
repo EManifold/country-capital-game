@@ -3,8 +3,10 @@ require 'question'
 describe Question do
   describe '#generate' do
     it "should generate a random country/capital pair" do
-      expect(subject.generate).to include 'Afghanistan'
-      expect(subject.generate).to include 'Kabul'
+      srand(2)
+      question = subject.generate
+      expect(question).to include 'Oman'
+      expect(question).to include 'Muscat'
     end
   end
 end

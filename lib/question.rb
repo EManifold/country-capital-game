@@ -1,6 +1,11 @@
 require 'restcountry'
 
-countries = Restcountry::Country.all
-num = rand(40)
-p countries[num].name
-p countries[num].capital
+class Question
+
+  def generate
+    countries = Restcountry::Country.all
+    country = countries.sample
+    answer = [country.name, country.capital]
+  end
+
+end
