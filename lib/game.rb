@@ -1,11 +1,12 @@
 class Game
-  attr_reader :score, :rounds, :questions
+  attr_reader :score, :rounds, :questions, :results, :answers
 
   def initialize
     @score = 0
     @rounds = 0
     @questions = []
     @answers = []
+    @results = []
   end
 
   def question(question)
@@ -23,6 +24,9 @@ class Game
 
     if @answer == @question[1]
       @score += 1
+      @results << 'correct'
+    else
+      @results << 'incorrect'
     end
   end
 

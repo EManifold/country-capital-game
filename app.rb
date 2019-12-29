@@ -159,6 +159,10 @@ class Capitals < Sinatra::Base
 
   get '/results' do
     @game = $game
+    @answers = @game.answers
+    @questions = @game.questions
+    @results = @game.results
+    erb :results
   end
 
   run! if app_file == $0
