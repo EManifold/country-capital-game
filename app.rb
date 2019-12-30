@@ -165,5 +165,10 @@ class Capitals < Sinatra::Base
     erb :results
   end
 
+  post '/play-again' do
+
+    redirect '/'
+  end
+
   run! if app_file == $0
 end
