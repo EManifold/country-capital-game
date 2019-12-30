@@ -1,4 +1,9 @@
-<h3>What is the capital of <%= @new_question[0] %>?</h3>
-<form action="/Q10" method="post">
-  <input type="text" name="answer">
-</form>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/all.css">
+
+<div id="question">
+  <h3>What is the capital of <%= @new_question[0] %>?</h3>
+  <form action="/Q10" method="post">
+    <input type="text" name="answer">
+  </form>
+</div>
