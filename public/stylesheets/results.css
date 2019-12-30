@@ -1,0 +1,36 @@
+body {
+  background-color: #025578;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#score {
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 22px;
+}
+
+#correct {
+  background-color: #96e0a0;
+  width: 40%;
+  border-radius: 5px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#wrong {
+  background-color: #ff9e9e;
+  width: 40%;
+  border-radius: 5px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+  font-size: 18px;
+  color: #4f4f4f;
+}
