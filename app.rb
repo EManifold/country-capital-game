@@ -47,8 +47,8 @@ class Capitals < Sinatra::Base
     @game = $game
     @game.answer(params[:answer])
     @game.result
-    p @game.rounds
-    p @game.questions
+    @game.rounds
+    @game.questions
     redirect '/Q4'
   end
 
